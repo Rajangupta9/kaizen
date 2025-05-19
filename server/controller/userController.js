@@ -2,7 +2,7 @@ const User = require("../model/userModel");
 const crypto = require("crypto");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const transporter = require("../Config/nodeMailer");
+const transporter = require("../config/nodeMailer");
 require("dotenv").config();
 
 const generateToken = (user) => {
