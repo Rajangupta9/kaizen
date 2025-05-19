@@ -15,12 +15,7 @@ const httpServer = http.createServer(app);
 app.use(express.json());
 
 // CORS configuration
-app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173', // Allow your frontend URL
-  credentials: true, // Allow credentials (cookies, authorization headers)
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Allowed methods
-  allowedHeaders: ['Content-Type', 'Authorization'] // Allowed headers
-}));
+app.use(cors());
 
 app.use(cookieParser());
 
