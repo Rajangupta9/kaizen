@@ -10,7 +10,7 @@ const Login = ({ setIsAuthenticated }) => {
     e.preventDefault();
     try {
       // Updated to use the login endpoint instead of signup
-      const res = await fetch('https://kaizen-gilt-delta.vercel.app/user/login', {
+      const res = await fetch('https://kaizen-h9i8.onrender.com/user/login', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ email, password })
