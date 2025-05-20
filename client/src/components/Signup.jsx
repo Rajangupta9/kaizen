@@ -11,7 +11,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       // Updated to use the signup endpoint
-      const res = await fetch('http://localhost:5000/user/signup', {
+      const res = await fetch('https://kaizen-gilt-delta.vercel.app/user/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email, password })

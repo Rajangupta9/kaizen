@@ -14,7 +14,7 @@ const httpServer = http.createServer(app);
 
 app.use(express.json());
 
-// CORS configuration
+
 // CORS configuration with options
 app.use(cors({
   origin: "https://kaizen-gilt-delta.vercel.app" || "http://localhost:3000",
