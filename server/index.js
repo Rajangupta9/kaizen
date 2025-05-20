@@ -16,10 +16,7 @@ app.use(express.json());
 
 
 // CORS configuration with options
-app.use(cors({
-  origin: "https://kaizen-gilt-delta.vercel.app" || "http://localhost:3000",
-  credentials: true
-}));
+app.use(cors());
 
 app.use(cookieParser());
 
